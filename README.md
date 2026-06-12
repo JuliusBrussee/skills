@@ -1,14 +1,15 @@
 # Julius Skills
 
-Six personal agent skills for now: Caveman base, Interface Kit, Grill Me, Loop Factory, Junior to Senior, and Context Canary.
+Seven personal agent skills for now: Caveman base, Interface Kit, Grill Me, Loop Factory, Junior to Senior, F*ck Slop, and Context Canary.
 
-This repo is shaped by six things:
+This repo is shaped by seven things:
 
 - **Caveman** - 70k-star token compression without technical loss. Small mouth, big brain.
 - **Interface Kit** - accessible, performant interfaces with strong aesthetic direction, not generic AI slop.
 - **Grill Me** - calibrated pressure before hard critique, so challenge matches user knowledge and comfort.
 - **Loop Factory** - spec-driven agent loop where tasks move through inbox → active → archive with a real review gate.
 - **Junior to Senior** - adversarial senior review that treats agent output as junior work and upgrades it with codebase + web research.
+- **F*ck Slop** - mechanical scan-and-rewrite loop that erases AI-writing tells from any text and lands it in the right register.
 - **Context Canary** - per-turn canary signal that makes silent context degradation visible, plus a recovery protocol when it trips.
 
 Point is control. Agents should be terse when talking, precise when building interfaces, calibrated when challenging plans, and disciplined when running build loops.
@@ -103,6 +104,17 @@ Use when you want:
 - best practices refreshed past the model's training cutoff via live web research
 - a clear delta between the original plan and the upgraded one
 - product decisions surfaced as open questions instead of silently invented
+
+### `fuck-slop`
+
+De-slop pass for any text. Scans with a regex catalog of AI-writing tells — negative parallelism ("not X but Y"), puffery vocabulary, rule-of-three, false ranges, em-dash abuse, uniform cadence, hedged both-sidesing — then rewrites at the level of meaning and re-scans its own output until clean. Built as a loop because the worst tells are emergent generative habits that a rewriting model reintroduces in paraphrase.
+
+Use when you want:
+
+- AI-drafted text that reads like a person wrote it
+- a diagnosis table of which tells were found before the rewrite
+- register-aware output: academic article, tweet, reddit post, LinkedIn, email, blog, docs, marketing
+- no overcorrection — no fake typos, forced slang, or invented specifics
 
 ### `context-canary`
 
