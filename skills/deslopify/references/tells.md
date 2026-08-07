@@ -1,6 +1,6 @@
 # AI-Writing Tell Catalog
 
-Detection patterns for the F*ck Slop scan. Patterns are written for `grep -Ein` (extended regex, case-insensitive, line numbers) so they can be run literally against a file:
+Detection patterns for the Deslopify scan. Patterns are written for `grep -Ein` (extended regex, case-insensitive, line numbers) so they can be run literally against a file:
 
 ```bash
 grep -Ein -f /dev/stdin draft.txt <<'PATTERNS'
