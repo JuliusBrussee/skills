@@ -4,7 +4,7 @@
 
 # Julius Skills
 
-Eight personal agent skills for now: Caveman base, Interface Kit, Grill Me, Loop Factory, Junior to Senior, F*ck Slop, Context Canary, and The Last 20%.
+Eight personal agent skills for now: Caveman base, Interface Kit, Grill Me, Loop Factory, Junior to Senior, Deslopify, Context Canary, and The Last 20%.
 
 This repo is shaped by eight things:
 
@@ -13,7 +13,7 @@ This repo is shaped by eight things:
 - **Grill Me** - calibrated pressure before hard critique, so challenge matches user knowledge and comfort.
 - **Loop Factory** - spec-driven agent loop where tasks move through inbox → active → archive with a real review gate.
 - **Junior to Senior** - adversarial senior review that treats agent output as junior work and upgrades it with codebase + web research.
-- **F*ck Slop** - mechanical scan-and-rewrite loop that erases AI-writing tells from any text and lands it in the right register.
+- **Deslopify** - mechanical scan-and-rewrite loop that erases AI-writing tells from any text and lands it in the right register.
 - **Context Canary** - per-turn canary signal that makes silent context degradation visible, plus a recovery protocol when it trips.
 - **The Last 20%** - finds and finishes the experiential layer agents skip: what the output reads like, which pages exist, first-run, defaults, the golden path.
 
@@ -110,7 +110,7 @@ Use when you want:
 - a clear delta between the original plan and the upgraded one
 - product decisions surfaced as open questions instead of silently invented
 
-### `fuck-slop`
+### `deslopify`
 
 De-slop pass for any text. Scans with a regex catalog of AI-writing tells — negative parallelism ("not X but Y"), puffery vocabulary, rule-of-three, false ranges, em-dash abuse, uniform cadence, hedged both-sidesing — then rewrites at the level of meaning and re-scans its own output until clean. Built as a loop because the worst tells are emergent generative habits that a rewriting model reintroduces in paraphrase.
 

@@ -1,17 +1,17 @@
 ---
-name: fuck-slop
+name: deslopify
 description: >
   De-slop pass for any text: detects and erases the statistical fingerprints of
   AI writing (negative parallelism / "not X but Y", em-dash abuse, rule-of-three,
   false ranges, puffery vocabulary, uniform cadence, hedged both-sidesing) and
   rewrites the text into its target register — academic article, tweet, reddit
-  post, email, blog, anything between. Use when the user says "fuck slop",
-  "f*ck slop", "deslop", "de-slop this", "remove the AI tells", "humanize this",
-  "make this not sound like AI", or invokes /fuck-slop. Also use before
+  post, email, blog, anything between. Use when the user says "deslopify",
+  "deslop", "de-slop this", "remove the AI tells", "humanize this",
+  "make this not sound like AI", or invokes /deslopify. Also use before
   publishing any agent-drafted prose.
 ---
 
-# F*ck Slop
+# Deslopify
 
 Strip every mark of AI writing from a text and make it good in its genre. Not "make it pass a detector" — make it read like a specific person with a specific point wrote it for a specific audience.
 
